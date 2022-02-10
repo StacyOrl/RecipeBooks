@@ -24,7 +24,7 @@ public class InnerMainActivity extends AppCompatActivity {
     private ArrayList<String> mCategoryTitles = new ArrayList<>();
     private ArrayList<String> mDescription = new ArrayList<>();
     private ArrayList<String> mTimes = new ArrayList<>();
-    private ArrayList<Integer> mRatingBars = new ArrayList<>();
+    private final ArrayList<Integer> mRatingBars = new ArrayList<>();
 
 
 
@@ -34,7 +34,7 @@ public class InnerMainActivity extends AppCompatActivity {
         List<AllCategories> allCategories = new ArrayList<>();
         getImages();
         setCategoryRecycler();
-//        setContentView(R.layout.item_main);
+        setContentView(R.layout.activity_main);
 //
 //        recyclerView = findViewById(R.id.container);
 //        recyclerView.setHasFixedSize(true);
@@ -92,21 +92,21 @@ public class InnerMainActivity extends AppCompatActivity {
         mNames.add("Mahahual");
         mTimes.add("3 hours");
 
-        mDescription.add("Lorem Ipsum6");
-        mImageUrls.add("https://i.redd.it/k98uzl68eh501.jpg");
-        mNames.add("Frozen Lake");
-
-        mDescription.add("Lorem Ipsum7");
-        mImageUrls.add("https://i.redd.it/glin0nwndo501.jpg");
-        mNames.add("White Sands Desert");
-
-        mDescription.add("Lorem Ipsum8");
-        mImageUrls.add("https://i.redd.it/obx4zydshg601.jpg");
-        mNames.add("Austrailia");
-
-        mDescription.add("Lorem Ipsum9");
-        mImageUrls.add("https://i.imgur.com/ZcLLrkY.jpg");
-        mNames.add("Washington");
+//        mDescription.add("Lorem Ipsum6");
+//        mImageUrls.add("https://i.redd.it/k98uzl68eh501.jpg");
+//        mNames.add("Frozen Lake");
+//
+//        mDescription.add("Lorem Ipsum7");
+//        mImageUrls.add("https://i.redd.it/glin0nwndo501.jpg");
+//        mNames.add("White Sands Desert");
+//
+//        mDescription.add("Lorem Ipsum8");
+//        mImageUrls.add("https://i.redd.it/obx4zydshg601.jpg");
+//        mNames.add("Austrailia");
+//
+//        mDescription.add("Lorem Ipsum9");
+//        mImageUrls.add("https://i.imgur.com/ZcLLrkY.jpg");
+//        mNames.add("Washington");
 
     }
     private void setCategoryRecycler(){
