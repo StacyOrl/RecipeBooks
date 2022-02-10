@@ -16,30 +16,30 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView; //объявляем RecyclerView
-    RecyclerView insideList;
-    RecyclerViewAdapter adapter; //объявляем adapter
-    LinearLayoutManager layoutManager;//объявляем LinearLayoutManager
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        recyclerView = findViewById(R.id.main_container);
-        recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
-        recyclerView.setLayoutManager(layoutManager);
-        insideList = findViewById(R.id.container);
-
-        generateItem();
-    }
-
-    private void generateItem() {
-        List<CategoryItem> itemList = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            itemList.add(new CategoryItem("Category"+i, insideList));
-        }
-        adapter = new RecyclerViewAdapter(this, itemList);
-        recyclerView.setAdapter(adapter);
-    }
+//    RecyclerView recyclerView; //объявляем RecyclerView
+//    RecyclerView insideList;
+//    RecyclerViewAdapter adapter; //объявляем adapter
+//    LinearLayoutManager layoutManager;//объявляем LinearLayoutManager
+//
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//
+//        recyclerView = findViewById(R.id.main_container);
+//        recyclerView.setHasFixedSize(true);
+//        layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+//        recyclerView.setLayoutManager(layoutManager);
+//        insideList = findViewById(R.id.container);
+//
+//        generateItem();
+//    }
+//
+//    private void generateItem() {
+//        List<CategoryItem> itemList = new ArrayList<>();
+//        for (int i = 0; i < 5; i++) {
+//            itemList.add(new CategoryItem("Category"+i, insideList));
+//        }
+//        adapter = new RecyclerViewAdapter(this, itemList);
+//        recyclerView.setAdapter(adapter);
+//    }
 }
