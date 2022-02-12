@@ -20,7 +20,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewHo
     private Context mContext;
     private List<Item> itemList;
 
-    public ImageView itemImage;
+
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
     private ArrayList<String> mDescription = new ArrayList<>();

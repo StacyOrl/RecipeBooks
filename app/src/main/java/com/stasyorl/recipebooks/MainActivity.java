@@ -14,15 +14,15 @@ import com.stasyorl.recipebooks.models.Item;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+//public class MainActivity extends AppCompatActivity {
 
 //    RecyclerView recyclerView; //объявляем RecyclerView
 //    RecyclerView insideList;
 //    RecyclerViewAdapter adapter; //объявляем adapter
 //    LinearLayoutManager layoutManager;//объявляем LinearLayoutManager
 //
-    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
+//    protected void onCreate(Bundle savedInstanceState) {
+////        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 //
 //        recyclerView = findViewById(R.id.main_container);
@@ -41,5 +41,5 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        adapter = new RecyclerViewAdapter(this, itemList);
 //        recyclerView.setAdapter(adapter);
-}
-}
+//}
+//}
