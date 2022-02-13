@@ -1,7 +1,6 @@
 package com.stasyorl.recipebooks;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,25 +11,26 @@ import com.stasyorl.recipebooks.mainAdapter.RecyclerViewAdapter;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView recyclerView; //объявляем RecyclerView
-    RecyclerViewAdapter adapter; //объявляем adapter
+//    RecyclerView recyclerView; //объявляем RecyclerView
+//    RecyclerViewAdapter adapter; //объявляем adapter
 
-    private ArrayList<String> mNames = new ArrayList<>();
-    private ArrayList<String> mImageUrls = new ArrayList<>();
-    private ArrayList<String> mCategoryTitles = new ArrayList<>();
-    private ArrayList<String> mDescription = new ArrayList<>();
-    private ArrayList<String> mTimes = new ArrayList<>();
-    private final ArrayList<Integer> mRatingBars = new ArrayList<>();
+    private ArrayList<String> newNames = new ArrayList<>();
+    private ArrayList<String> newImageUrls = new ArrayList<>();
+    private ArrayList<String> newCategoryTitles = new ArrayList<>();
+    private ArrayList<String> newDescription = new ArrayList<>();
+    private ArrayList<String> newTimes = new ArrayList<>();
+    private final ArrayList<Integer> newRatingBars = new ArrayList<>();
 
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         //List<AllCategories> allCategories = new ArrayList<>();
         getImages();
         setCategoryRecycler();
-        setContentView(R.layout.activity_main);
+
 //
 //        recyclerView = findViewById(R.id.container);
 //        recyclerView.setHasFixedSize(true);
@@ -62,39 +62,41 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getImages(){
-        mCategoryTitles.add("Category 1");
-        mCategoryTitles.add("Category 2");
-        mCategoryTitles.add("Category 3");
+        newCategoryTitles.add("Category 1");
+        newCategoryTitles.add("Category 2");
+        newCategoryTitles.add("Category 3");
 
 
-        mDescription.add("Lorem Ipsum");
-        mImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
-        mNames.add("Havasu Falls");
-        mTimes.add("3 hours");
-        mRatingBars.add(3);
+        newDescription.add("Lorem Ipsum");
+        newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
+        newNames.add("Havasu Falls");
+        newTimes.add("3 hours");
+        newRatingBars.add(3);
 
 
-        mDescription.add("Lorem Ipsum2");
-        mImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
-        mNames.add("Trondheim");
-        mTimes.add("1 hours");
-        mRatingBars.add(5);
+        newDescription.add("Lorem Ipsum2");
+        newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
+        newNames.add("Trondheim");
+        newTimes.add("1 hours");
+        newRatingBars.add(5);
 
-        mDescription.add("Lorem Ipsum3");
-        mImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
-        mNames.add("Portugal");
-        mTimes.add("2 hours");
-        mRatingBars.add(2);
+        newDescription.add("Lorem Ipsum3");
+        newImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
+        newNames.add("Portugal");
+        newTimes.add("2 hours");
+        newRatingBars.add(2);
 
-        mDescription.add("Lorem Ipsum4");
-        mImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
-        mNames.add("Rocky Mountain National Park");
-        mTimes.add("6 hours");
+        newDescription.add("Lorem Ipsum4");
+        newImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
+        newNames.add("Rocky Mountain National Park");
+        newTimes.add("6 hours");
+        newRatingBars.add(2);
 
-        mDescription.add("Lorem Ipsum5");
-        mImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
-        mNames.add("Mahahual");
-        mTimes.add("3 hours");
+        newDescription.add("Lorem Ipsum5");
+        newImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
+        newNames.add("Mahahual");
+        newTimes.add("3 hours");
+        newRatingBars.add(2);
 
 //        mDescription.add("Lorem Ipsum6");
 //        mImageUrls.add("https://i.redd.it/k98uzl68eh501.jpg");
@@ -114,11 +116,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void setCategoryRecycler(){
-        recyclerView = findViewById(R.id.main_container);
-        adapter = new RecyclerViewAdapter(this, mNames, mImageUrls, mCategoryTitles, mDescription, mTimes, mRatingBars);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setAdapter(adapter);
+        RecyclerView recyclerView = findViewById(R.id.main_container);
+        recyclerView.setHasFixedSize(true);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(MainActivity.this, newNames, newImageUrls, newCategoryTitles, newDescription, newTimes, newRatingBars);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
     }
 
 //    RecyclerView recyclerView; //объявляем RecyclerView

@@ -101,11 +101,11 @@
                     android:layout_height="wrap_content"
 
                     android:layout_gravity="end"
-                    android:layout_marginLeft="55dp"
-                    android:numStars="5"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="2"
+                    android:paddingTop="5dp"
                     android:rating="3"
-                    android:stepSize="0"
-                    android:paddingTop="5dp"/>
+                    android:stepSize="0" />
             </LinearLayout>
 
 

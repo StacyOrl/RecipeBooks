@@ -60,7 +60,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public int getItemCount() {
-        return itemList.size();
+        return mCategoryTitles.size();
     }
 
     private void  setCatItemRecycler(RecyclerView recyclerView, String categoryChildren ){
