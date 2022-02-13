@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.stasyorl.recipebooks.R;
-import com.stasyorl.recipebooks.adapter.MyRecyclerViewAdapter;
+import com.stasyorl.recipebooks.adapter.childItemRecyclerAdapter;
 import com.stasyorl.recipebooks.models.CategoryItem;
 
 import java.util.ArrayList;
@@ -53,8 +53,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
-        holder.categoryText.setText(itemList.get(position).getCategoryText());
-        setCatItemRecycler(holder.categoryItem, mNames.get(position));
+        holder.categoryText.setText(mCategoryTitles.get(position));
+        setCatItemRecycler(holder.categoryItemRecycler, mNames.get(position));
     }
 
 
@@ -64,7 +64,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     }
 
     private void  setCatItemRecycler(RecyclerView recyclerView, String categoryChildren ){
-        MyRecyclerViewAdapter childItemRecyclerAdapter = new MyRecyclerViewAdapter(mContext, mNames, mImageUrls, mDescription, mTimes, mRatingBars );
+        childItemRecyclerAdapter childItemRecyclerAdapter = new childItemRecyclerAdapter(mContext, mNames, mImageUrls, mDescription, mTimes, mRatingBars );
         recyclerView.setLayoutManager(new LinearLayoutManager(mContext, RecyclerView.HORIZONTAL, false));
         recyclerView.setAdapter(childItemRecyclerAdapter);
     }}

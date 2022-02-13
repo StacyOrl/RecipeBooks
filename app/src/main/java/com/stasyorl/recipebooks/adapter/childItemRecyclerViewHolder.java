@@ -10,13 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.stasyorl.recipebooks.R;
 
-public class MyRecyclerViewHolder extends RecyclerView.ViewHolder {
+public class childItemRecyclerViewHolder extends RecyclerView.ViewHolder {
 
     TextView cardName, cardDescription, cardTime;
     RatingBar cardRating;
     ImageView cardImg;
 
-    public MyRecyclerViewHolder(@NonNull View itemView) {
+    public childItemRecyclerViewHolder(@NonNull View itemView) {
         super(itemView);
 
         cardName = itemView.findViewById(R.id.card_item_name);

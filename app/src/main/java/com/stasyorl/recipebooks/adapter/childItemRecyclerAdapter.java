@@ -15,7 +15,7 @@ import com.stasyorl.recipebooks.models.Item;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewHolder>{
+public class childItemRecyclerAdapter extends RecyclerView.Adapter<childItemRecyclerViewHolder>{
     private Context mContext;
     private List<Item> itemList;
 
@@ -34,8 +34,8 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewHo
 //        this.itemList = itemList;
 //    }
 
-    public MyRecyclerViewAdapter(Context mContext, ArrayList<String> mNames, ArrayList<String> mImageUrls,
-                                 ArrayList<String> mDescription, ArrayList<String> mTimes, ArrayList<Integer> mRatingBars) {
+    public childItemRecyclerAdapter(Context mContext, ArrayList<String> mNames, ArrayList<String> mImageUrls,
+                                    ArrayList<String> mDescription, ArrayList<String> mTimes, ArrayList<Integer> mRatingBars) {
         this.mContext = mContext;
         this.mNames = mNames;
         this.mImageUrls = mImageUrls;
@@ -46,14 +46,14 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewHo
 
     @NonNull
     @Override
-    public MyRecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public childItemRecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(mContext)
                 .inflate(R.layout.child_item,parent,false);
-        return new MyRecyclerViewHolder(itemView);
+        return new childItemRecyclerViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyRecyclerViewHolder
+    public void onBindViewHolder(@NonNull childItemRecyclerViewHolder
                                          holder, int position) {
         Glide.with(mContext)
                 .load(mImageUrls.get(position))
