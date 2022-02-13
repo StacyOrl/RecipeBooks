@@ -17,7 +17,6 @@ import java.util.List;
 public class InnerMainActivity extends AppCompatActivity {
     RecyclerView recyclerView; //объявляем RecyclerView
     RecyclerViewAdapter adapter; //объявляем adapter
-    LinearLayoutManager layoutManager;//объявляем LinearLayoutManager
 
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();

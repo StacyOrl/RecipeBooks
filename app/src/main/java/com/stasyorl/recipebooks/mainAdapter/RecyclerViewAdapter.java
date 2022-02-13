@@ -9,12 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.stasyorl.recipebooks.R;
 import com.stasyorl.recipebooks.adapter.MyRecyclerViewAdapter;
-import com.stasyorl.recipebooks.adapter.MyRecyclerViewHolder;
 import com.stasyorl.recipebooks.models.CategoryItem;
-import com.stasyorl.recipebooks.models.Item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +47,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     @Override
     public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_main,parent,false);
+                .inflate(R.layout.parent_item,parent,false);
         return new RecyclerViewHolder(itemView);
     }
 
