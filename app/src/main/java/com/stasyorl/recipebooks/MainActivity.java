@@ -67,34 +67,34 @@ public class MainActivity extends AppCompatActivity {
         newCategoryTitles.add("Category 3");
 
 
-        newDescription.add("Lorem Ipsum");
+        newDescription.add("Recipe1");
         newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
-        newNames.add("Havasu Falls");
+        newNames.add("pamparam");
         newTimes.add("3 hours");
         newRatingBars.add(3);
 
 
-        newDescription.add("Lorem Ipsum2");
+        newDescription.add("Recipe2");
         newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
-        newNames.add("Trondheim");
+        newNames.add("pamparam");
         newTimes.add("1 hours");
         newRatingBars.add(5);
 
-        newDescription.add("Lorem Ipsum3");
+        newDescription.add("Recipe3");
         newImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
-        newNames.add("Portugal");
+        newNames.add("tinderin");
         newTimes.add("2 hours");
         newRatingBars.add(2);
 
-        newDescription.add("Lorem Ipsum4");
+        newDescription.add("Recipe4");
         newImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
-        newNames.add("Rocky Mountain National Park");
+        newNames.add("lalala");
         newTimes.add("6 hours");
         newRatingBars.add(2);
 
-        newDescription.add("Lorem Ipsum5");
+        newDescription.add("Recipe5");
         newImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
-        newNames.add("Mahahual");
+        newNames.add("bambambam");
         newTimes.add("3 hours");
         newRatingBars.add(2);
 
