@@ -10,4 +10,7 @@
     <color name="bg_color">#b3fcc7</color>
     <color name="bege_bright_main">#F8D1AD</color>
     <color name="green_main">#64E188</color>
+
+    <color name="light_grey">#fafffc</color>
+
 </resources>

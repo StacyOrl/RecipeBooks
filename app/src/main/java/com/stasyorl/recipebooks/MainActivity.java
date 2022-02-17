@@ -1,11 +1,13 @@
 package com.stasyorl.recipebooks;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.stasyorl.recipebooks.adapter.childItemRecyclerAdapter;
 import com.stasyorl.recipebooks.mainAdapter.RecyclerViewAdapter;
 
 import java.util.ArrayList;
@@ -31,27 +33,9 @@ public class MainActivity extends AppCompatActivity {
         getImages();
         setCategoryRecycler();
 
-//
-//        recyclerView = findViewById(R.id.container);
-//        recyclerView.setHasFixedSize(true);
-//        layoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, true);
-//        recyclerView.setLayoutManager(layoutManager);
-//
-//        generateItem();
+
     }
 
-//    private void generateItem() {
-//        List<Item> itemList = new ArrayList<>();
-//        for (int i = 0; i < 15; i++) {
-//            itemList.add(new Item(
-//                    "Pizza "+i,
-//                    "100000$",
-//                    "https://image.shutterstock.com/z/stock-photo-heart-pizza-with-mozzarella-and-tomatoes-on-a-slate-valentine-s-day-date-food-concept-1569808198.jpg", "1", 2));
-//
-//        }
-//        adapter = new MyRecyclerViewAdapter(this, itemList);
-//        recyclerView.setAdapter(adapter);
-//    }
 
 
     @Override
@@ -68,32 +52,32 @@ public class MainActivity extends AppCompatActivity {
 
 
         newDescription.add("Recipe1");
-        newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
+        newImageUrls.add("https://images.immediate.co.uk/production/volatile/sites/30/2021/08/Sausage-and-mushroom-ragu-203c7d4.jpg");
         newNames.add("pamparam");
         newTimes.add("3 hours");
         newRatingBars.add(3);
 
 
         newDescription.add("Recipe2");
-        newImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
+        newImageUrls.add("https://www.simplyrecipes.com/thmb/JWjdE8YwikAae0KZuyy6ZJW7Utw=/3000x2001/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Homemade-Pizza-Dough-Lead-Shot-1c-c2b1885d27d4481c9cfe6f6286a64342.jpg");
         newNames.add("pamparam");
         newTimes.add("1 hours");
         newRatingBars.add(5);
 
         newDescription.add("Recipe3");
-        newImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
+        newImageUrls.add("https://www.saveur.com/uploads/2020/11/20/Y7RZPFZEERAZVHJ2VHC2RXMEEY.jpg?quality=85&width=540");
         newNames.add("tinderin");
         newTimes.add("2 hours");
         newRatingBars.add(2);
 
         newDescription.add("Recipe4");
-        newImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
+        newImageUrls.add("https://www.indianhealthyrecipes.com/wp-content/uploads/2019/11/samosa-recipe-480x270.jpg");
         newNames.add("lalala");
         newTimes.add("6 hours");
         newRatingBars.add(2);
 
         newDescription.add("Recipe5");
-        newImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
+        newImageUrls.add("https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/courgette_pakoras_83738_16x9.jpg");
         newNames.add("bambambam");
         newTimes.add("3 hours");
         newRatingBars.add(2);
@@ -125,30 +109,4 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
-//    RecyclerView recyclerView; //объявляем RecyclerView
-//    RecyclerView insideList;
-//    RecyclerViewAdapter adapter; //объявляем adapter
-//    LinearLayoutManager layoutManager;//объявляем LinearLayoutManager
-//
-//    protected void onCreate(Bundle savedInstanceState) {
-////        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//
-//        recyclerView = findViewById(R.id.main_container);
-//        recyclerView.setHasFixedSize(true);
-//        layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
-//        recyclerView.setLayoutManager(layoutManager);
-//        insideList = findViewById(R.id.container);
-//
-//        generateItem();
-//    }
-//
-//    private void generateItem() {
-//        List<CategoryItem> itemList = new ArrayList<>();
-//        for (int i = 0; i < 5; i++) {
-//            itemList.add(new CategoryItem("Category"+i, insideList));
-//        }
-//        adapter = new RecyclerViewAdapter(this, itemList);
-//        recyclerView.setAdapter(adapter);
-//}
 }

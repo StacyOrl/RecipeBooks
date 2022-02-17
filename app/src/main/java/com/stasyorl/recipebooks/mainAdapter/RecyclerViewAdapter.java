@@ -38,11 +38,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
         this.mRatingBars = mRatingBars;
     }
 
-    //    public RecyclerViewAdapter(Context mContext, List<CategoryItem>
-//            itemList) {
-//        this.mContext = mContext;
-//        this.itemList = itemList;
-//    }
+
     @NonNull
     @Override
     public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

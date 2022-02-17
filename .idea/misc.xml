@@ -4,12 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/drawable-v24/ic_baseline_access_time_24.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/font/alice.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/font/montserrat.xml" value="0.396875" />
+        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/font/montserrat_subrayada.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
-        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/child_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/activity_recipe_description.xml" value="0.2753623188405797" />
+        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/child_item.xml" value="0.33" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/first_recycler_view.xml" value="0.29483695652173914" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/item.xml" value="0.29483695652173914" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/item_main.xml" value="0.29483695652173914" />
+        <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/parent_item.xml" value="0.2753623188405797" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/search.xml" value="0.29483695652173914" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/layout/user_register_fragment.xml" value="0.2821557971014493" />
         <entry key="..\:/Users/User/RecipeBooks/app/src/main/res/menu/settings_right_corner.xml" value="0.20520833333333333" />
