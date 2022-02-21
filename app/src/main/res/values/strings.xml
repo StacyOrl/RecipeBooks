@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">RecipeBooks</string>
     <string name="recipebook">Recipe Book</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
 </resources>

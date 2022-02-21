@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -68,6 +70,20 @@
         app:layout_constraintTop_toBottomOf="@+id/search_bar">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_items" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
