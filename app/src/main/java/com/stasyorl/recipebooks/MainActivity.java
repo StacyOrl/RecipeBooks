@@ -13,8 +13,6 @@ import com.stasyorl.recipebooks.mainAdapter.RecyclerViewAdapter;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-//    RecyclerView recyclerView; //объявляем RecyclerView
-//    RecyclerViewAdapter adapter; //объявляем adapter
 
     private ArrayList<String> newNames = new ArrayList<>();
     private ArrayList<String> newImageUrls = new ArrayList<>();
@@ -50,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         newCategoryTitles.add("Category 1");
         newCategoryTitles.add("Category 2");
         newCategoryTitles.add("Category 3");
+        newCategoryTitles.add("Category 4");
+
 
 
         newDescription.add("Recipe1");

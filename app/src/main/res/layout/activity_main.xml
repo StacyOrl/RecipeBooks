@@ -49,27 +49,30 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include
-        android:id="@+id/search_bar"
-        layout="@layout/search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_container"
-        android:layout_width="409dp"
-        android:layout_height="533dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <include
+            android:id="@+id/search_bar"
+            layout="@layout/search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/search_bar">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/my_drawer_layout"
@@ -80,6 +83,11 @@
             android:layout_gravity="start"
             app:menu="@menu/drawer_items" />
     </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
 
 
 
